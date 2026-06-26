@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/style.css" rel="stylesheet">
+    <title>Login | SkyJet</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-slate-100">
+
+    <div class="min-h-screen grid lg:grid-cols-2">
+
+        <!-- Left -->
+
+        <div class="hidden lg:flex relative">
+
+            <img src="src/imgs/flight.png" class="absolute w-full h-full object-cover">
+
+            <div class="absolute inset-0 bg-sky-900/60 backdrop-blur-sm"></div>
+
+            <div class="relative z-10 flex flex-col justify-center px-20">
+
+                <h1 class="text-white text-6xl font-bold leading-tight">
+
+                    Welcome Back.
+
+                </h1>
+
+                <p class="text-white/90 text-xl mt-8 leading-9">
+
+                    Book flights to more than 190 countries with the world's best airlines.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- Right -->
+
+        <div class="flex items-center justify-center p-8">
+
+            <div class="bg-white w-full max-w-md rounded-[35px] shadow-2xl p-10">
+
+                <div class="text-center">
+
+                    <h2 class="text-4xl font-bold">
+
+                        Login
+
+                    </h2>
+
+                    <p class="text-gray-500 mt-3">
+
+                        Welcome back to SkyJet
+
+                    </p>
+
+                </div>
+
+                <form class="mt-10 space-y-6">
+
+                    <div>
+
+                        <label class="font-semibold text-gray-700">
+
+                            Email
+
+                        </label>
+
+                        <input type="email" placeholder="Enter your email"
+                            class="w-full mt-2 p-4 rounded-xl border outline-none focus:ring-2 focus:ring-sky-500">
+
+                    </div>
+
+                    <div>
+
+                        <label class="font-semibold text-gray-700">
+
+                            Password
+
+                        </label>
+
+                        <input type="password" placeholder="********"
+                            class="w-full mt-2 p-4 rounded-xl border outline-none focus:ring-2 focus:ring-sky-500">
+
+                    </div>
+
+                    <div class="flex justify-between text-sm">
+
+                        <label class="flex items-center gap-2">
+
+                            <input type="checkbox">
+
+                            Remember me
+
+                        </label>
+
+                        <a href="#" class="text-sky-500">
+
+                            Forgot Password?
+
+                        </a>
+
+                    </div>
+
+                    <button
+                        class="w-full bg-sky-500 hover:bg-sky-600 transition text-white py-4 rounded-xl font-semibold">
+
+                        Login
+
+                    </button>
+
+                </form>
+
+                <div class="my-8 flex items-center gap-3">
+
+                    <div class="flex-1 h-px bg-gray-300"></div>
+
+                    <span class="text-gray-500">
+
+                        OR
+
+                    </span>
+
+                    <div class="flex-1 h-px bg-gray-300"></div>
+
+                </div>
+
+                <div class="space-y-4">
+
+                    <button class="w-full border rounded-xl py-4 hover:bg-gray-100">
+
+                        Continue with Google
+
+                    </button>
+
+                    <button class="w-full border rounded-xl py-4 hover:bg-gray-100">
+
+                        Continue with Apple
+
+                    </button>
+
+                </div>
+
+                <p class="text-center mt-8 text-gray-600">
+
+                    Don't have an account?
+
+                    <a href="#" class="text-sky-500 font-semibold">
+
+                        Register
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,1083 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+  <title>SkyJet Airline</title>
+</head>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+
+  tailwind.config = {
+
+    theme: {
+
+      extend: {
+
+        colors: {
+
+          primary: "#0EA5E9",
+
+          dark: "#0F172A",
+
+          secondary: "#1E293B"
+
+        }
+
+      }
+
+    }
+
+  }
+
+</script>
+</head>
+
+<body class="bg-slate-100">
+
+  <!-- Navbar -->
+
+  <nav class="bg-white shadow-lg fixed top-0 left-0 w-full z-50">
+
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-5 px-6">
+
+      <div class="text-3xl font-bold text-sky-500">
+
+        SkyJet
+
+      </div>
+
+      <ul class="hidden md:flex gap-8 text-gray-700 font-semibold">
+
+        <li><a href="#">Flights</a></li>
+
+        <li><a href="#">Hotels</a></li>
+
+        <li><a href="#">Tours</a></li>
+
+        <li><a href="#">Support</a></li>
+
+      </ul>
+
+      <div>
+
+        <button class="bg-sky-500 text-white px-6 py-2 rounded-xl"><a href="login.html">Login</a></button>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- Hero -->
+
+  <section class="pt-36">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="rounded-[40px] overflow-hidden relative h-[750px]
+md:h-[650px]">
+
+        <img src="src/imgs/flight.png" class="absolute w-full h-full object-cover">
+
+        <div class="absolute inset-0 bg-black/50"></div>
+
+        <div class="relative z-20 flex flex-col justify-center h-full px-6
+md:px-12
+lg:px-20">
+
+          <h1 class="
+          text-4xl
+          md:text-5xl
+          lg:text-6xl
+          font-bold
+          leading-tight
+          ">
+
+            Book Your Dream Flight Anywhere in the World
+
+          </h1>
+
+          <p class="text-white mt-8 text-xl w-1/2">
+
+            Fast booking, best prices and trusted airlines.
+
+          </p>
+
+          <!-- Search Box -->
+
+          <div class="bg-white mt-14 rounded-3xl shadow-2xl p-8">
+
+            <div class="grid
+grid-cols-1
+md:grid-cols-2
+lg:grid-cols-5
+gap-4">
+
+              <input type="text" placeholder="From" class="border p-4 rounded-xl outline-sky-500">
+
+              <input type="text" placeholder="To" class="border p-4 rounded-xl outline-sky-500">
+
+              <input type="date" class="border p-4 rounded-xl">
+
+              <input type="date" class="border p-4 rounded-xl">
+
+              <button class="bg-sky-500 rounded-xl text-white text-lg">
+
+                Search Flight
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ========================= -->
+  <!-- Popular Destinations -->
+  <!-- ========================= -->
+
+  <section class="py-24 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="flex justify-between items-center mb-12">
+
+        <div>
+
+          <h2 class="text-4xl font-bold text-slate-800">
+
+            Popular Destinations
+
+          </h2>
+
+          <p class="text-slate-500 mt-3">
+
+            Discover the most booked flights this month.
+
+          </p>
+
+        </div>
+
+        <button class="bg-sky-500 hover:bg-sky-600 transition text-white px-6 py-3 rounded-xl">
+
+          View All
+
+        </button>
+
+      </div>
+
+      <div class="grid
+grid-cols-1
+sm:grid-cols-2
+xl:grid-cols-4
+gap-8">
+
+        <!-- Card -->
+
+        <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl duration-300">
+
+          <div class="overflow-hidden">
+
+            <img src="src/imgs/dubai.png" class="group-hover:scale-110 duration-500 h-72 w-full object-cover">
+
+          </div>
+
+          <div class="p-6">
+
+            <div class="flex justify-between">
+
+              <h3 class="text-2xl font-bold">
+
+                Dubai
+
+              </h3>
+
+              <span class="bg-sky-100 text-sky-600 px-3 py-1 rounded-full text-sm">
+
+                UAE
+
+              </span>
+
+            </div>
+
+            <p class="text-gray-500 mt-4">
+
+              Direct flights everyday from Tehran.
+
+            </p>
+
+            <div class="flex justify-between items-center mt-8">
+
+              <div>
+
+                <p class="text-gray-400 text-sm">
+
+                  Starting From
+
+                </p>
+
+                <h4 class="text-2xl font-bold text-sky-600">
+
+                  $189
+
+                </h4>
+
+              </div>
+
+              <button class="bg-sky-500 text-white px-5 py-3 rounded-xl">
+
+                Book
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Card -->
+
+        <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl duration-300">
+
+          <div class="overflow-hidden">
+
+            <img src="src/imgs/istanbul.png" class="group-hover:scale-110 duration-500 h-72 w-full object-cover">
+
+          </div>
+
+          <div class="p-6">
+
+            <div class="flex justify-between">
+
+              <h3 class="text-2xl font-bold">
+
+                Istanbul
+
+              </h3>
+
+              <span class="bg-sky-100 text-sky-600 px-3 py-1 rounded-full text-sm">
+
+                Turkey
+
+              </span>
+
+            </div>
+
+            <p class="text-gray-500 mt-4">
+
+              Daily nonstop flights.
+
+            </p>
+
+            <div class="flex justify-between items-center mt-8">
+
+              <div>
+
+                <p class="text-gray-400 text-sm">
+
+                  Starting From
+
+                </p>
+
+                <h4 class="text-2xl font-bold text-sky-600">
+
+                  $165
+
+                </h4>
+
+              </div>
+
+              <button class="bg-sky-500 text-white px-5 py-3 rounded-xl">
+
+                Book
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Card -->
+
+        <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl duration-300">
+
+          <div class="overflow-hidden">
+
+            <img src="src/imgs/paris.png" class="group-hover:scale-110 duration-500 h-72 w-full object-cover">
+
+          </div>
+
+          <div class="p-6">
+
+            <div class="flex justify-between">
+
+              <h3 class="text-2xl font-bold">
+
+                Paris
+
+              </h3>
+
+              <span class="bg-sky-100 text-sky-600 px-3 py-1 rounded-full text-sm">
+
+                France
+
+              </span>
+
+            </div>
+
+            <p class="text-gray-500 mt-4">
+
+              Explore Europe with SkyJet.
+
+            </p>
+
+            <div class="flex justify-between items-center mt-8">
+
+              <div>
+
+                <p class="text-gray-400 text-sm">
+
+                  Starting From
+
+                </p>
+
+                <h4 class="text-2xl font-bold text-sky-600">
+
+                  $520
+
+                </h4>
+
+              </div>
+
+              <button class="bg-sky-500 text-white px-5 py-3 rounded-xl">
+
+                Book
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Card -->
+
+        <div class="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl duration-300">
+
+          <div class="overflow-hidden">
+
+            <img src="src/imgs/london.png" class="group-hover:scale-110 duration-500 h-72 w-full object-cover">
+
+          </div>
+
+          <div class="p-6">
+
+            <div class="flex justify-between">
+
+              <h3 class="text-2xl font-bold">
+
+                London
+
+              </h3>
+
+              <span class="bg-sky-100 text-sky-600 px-3 py-1 rounded-full text-sm">
+
+                UK
+
+              </span>
+
+            </div>
+
+            <p class="text-gray-500 mt-4">
+
+              Premium airlines with best prices.
+
+            </p>
+
+            <div class="flex justify-between items-center mt-8">
+
+              <div>
+
+                <p class="text-gray-400 text-sm">
+
+                  Starting From
+
+                </p>
+
+                <h4 class="text-2xl font-bold text-sky-600">
+
+                  $610
+
+                </h4>
+
+              </div>
+
+              <button class="bg-sky-500 text-white px-5 py-3 rounded-xl">
+
+                Book
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ========================= -->
+  <!-- Special Offers -->
+  <!-- ========================= -->
+
+  <section class="py-24 bg-slate-100">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Title -->
+
+      <div class="flex justify-between items-center mb-12">
+
+        <div>
+
+          <h2 class="text-4xl font-bold text-slate-800">
+            Special Offers
+          </h2>
+
+          <p class="text-slate-500 mt-3">
+            Limited-time deals on the world's top destinations.
+          </p>
+
+        </div>
+
+        <button
+          class="border border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white transition-all duration-300 px-6 py-3 rounded-xl">
+
+          Explore All Offers
+
+        </button>
+
+      </div>
+
+      <!-- Cards -->
+
+      <div class="grid lg:grid-cols-3 gap-8">
+
+        <!-- Card -->
+
+        <div class="relative rounded-3xl overflow-hidden group shadow-xl h-[520px]">
+
+          <img src="src/imgs/maldive1.png"
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700">
+
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+
+          <div class="absolute top-6 left-6 bg-red-500 text-white px-4 py-2 rounded-full font-semibold">
+
+            40% OFF
+
+          </div>
+
+          <div class="absolute bottom-8 left-8 right-8 text-white">
+
+            <p class="uppercase tracking-widest text-sm text-sky-300">
+
+              Summer Escape
+
+            </p>
+
+            <h3 class="text-4xl font-bold mt-3">
+
+              Maldives
+
+            </h3>
+
+            <p class="mt-5 text-gray-200 leading-7">
+
+              Enjoy crystal-clear beaches and luxury resorts with
+              exclusive airline discounts.
+
+            </p>
+
+            <div class="flex justify-between items-center mt-8">
+
+              <div>
+
+                <p class="text-gray-300 text-sm">
+
+                  From
+
+                </p>
+
+                <h4 class="text-3xl font-bold">
+
+                  $799
+
+                </h4>
+
+              </div>
+
+              <button class="bg-sky-500 hover:bg-sky-600 transition px-6 py-3 rounded-xl">
+
+                Book Now
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Card -->
+
+        <div class="relative rounded-3xl overflow-hidden group shadow-xl h-[520px]">
+
+          <img src="src/imgs/rome2.png"
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700">
+
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+
+          <div class="absolute top-6 left-6 bg-orange-500 text-white px-4 py-2 rounded-full font-semibold">
+
+            HOT DEAL
+
+          </div>
+
+          <div class="absolute bottom-8 left-8 right-8 text-white">
+
+            <p class="uppercase tracking-widest text-sm text-yellow-300">
+
+              Weekend Offer
+
+            </p>
+
+            <h3 class="text-4xl font-bold mt-3">
+
+              Rome
+
+            </h3>
+
+            <p class="mt-5 text-gray-200 leading-7">
+
+              Experience history, culture and amazing food with our
+              exclusive airfare packages.
+
+            </p>
+
+            <div class="flex justify-between items-center mt-8">
+
+              <div>
+
+                <p class="text-gray-300 text-sm">
+
+                  From
+
+                </p>
+
+                <h4 class="text-3xl font-bold">
+
+                  $449
+
+                </h4>
+
+              </div>
+
+              <button class="bg-sky-500 hover:bg-sky-600 transition px-6 py-3 rounded-xl">
+
+                Book Now
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Card -->
+
+        <div class="relative rounded-3xl overflow-hidden group shadow-xl h-[520px]">
+
+          <img src="src/imgs/tokyo.png"
+            class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700">
+
+          <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
+
+          <div class="absolute top-6 left-6 bg-green-500 text-white px-4 py-2 rounded-full font-semibold">
+
+            NEW
+
+          </div>
+
+          <div class="absolute bottom-8 left-8 right-8 text-white">
+
+            <p class="uppercase tracking-widest text-sm text-green-300">
+
+              Discover Asia
+
+            </p>
+
+            <h3 class="text-4xl font-bold mt-3">
+
+              Tokyo
+
+            </h3>
+
+            <p class="mt-5 text-gray-200 leading-7">
+
+              Fly to Japan with premium airlines and enjoy exclusive
+              seasonal discounts.
+
+            </p>
+
+            <div class="flex justify-between items-center mt-8">
+
+              <div>
+
+                <p class="text-gray-300 text-sm">
+
+                  From
+
+                </p>
+
+                <h4 class="text-3xl font-bold">
+
+                  $920
+
+                </h4>
+
+              </div>
+
+              <button class="bg-sky-500 hover:bg-sky-600 transition px-6 py-3 rounded-xl">
+
+                Book Now
+
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Banner -->
+
+      <div class="mt-20 bg-gradient-to-r from-sky-600 via-cyan-500 to-sky-400 rounded-[40px] overflow-hidden">
+
+        <div class="grid
+grid-cols-1
+lg:grid-cols-2 items-center">
+
+          <div class="p-16">
+
+            <span class="bg-white/20 text-white px-4 py-2 rounded-full">
+
+              Premium Membership
+
+            </span>
+
+            <h2 class="text-white text-5xl font-bold mt-8 leading-tight">
+
+              Save More On Every Flight
+
+            </h2>
+
+            <p class="text-sky-100 mt-6 text-lg leading-8">
+
+              Join SkyJet Premium and enjoy exclusive discounts,
+              airport lounge access, priority boarding and cashback on
+              every booking.
+
+            </p>
+
+            <button class="mt-10 bg-white text-sky-600 font-bold px-8 py-4 rounded-2xl hover:scale-105 transition">
+
+              Become Premium
+
+            </button>
+
+          </div>
+
+          <div>
+
+            <img src="src/imgs/flight.png" class="w-full h-full object-cover">
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ===================================================== -->
+  <!-- WHY CHOOSE SKYJET -->
+  <!-- ===================================================== -->
+
+  <section class="py-20 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <!-- Heading -->
+
+      <div class="text-center max-w-2xl mx-auto">
+
+        <span class="inline-block bg-sky-100 text-sky-600 px-5 py-2 rounded-full font-semibold">
+
+          Why Choose SkyJet
+
+        </span>
+
+        <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mt-6">
+
+          Experience Better Flying
+
+        </h2>
+
+        <p class="text-slate-500 mt-6 leading-8">
+
+          Thousands of travelers trust SkyJet every day for booking
+          affordable flights with premium airlines worldwide.
+
+        </p>
+
+      </div>
+
+      <!-- Features -->
+
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mt-20">
+
+        <!-- Feature -->
+
+        <div
+          class="group bg-white border rounded-3xl p-8 hover:bg-sky-500 hover:text-white transition duration-300 shadow-lg">
+
+          <div class="w-20 h-20 rounded-2xl bg-sky-100 group-hover:bg-white flex items-center justify-center text-4xl">
+
+            ✈️
+
+          </div>
+
+          <h3 class="text-2xl font-bold mt-8">
+
+            Best Airlines
+
+          </h3>
+
+          <p class="mt-4 leading-8 text-gray-500 group-hover:text-white">
+
+            Book flights from more than 500 trusted airlines across the
+            world.
+
+          </p>
+
+        </div>
+
+        <!-- Feature -->
+
+        <div
+          class="group bg-white border rounded-3xl p-8 hover:bg-sky-500 hover:text-white transition duration-300 shadow-lg">
+
+          <div class="w-20 h-20 rounded-2xl bg-sky-100 group-hover:bg-white flex items-center justify-center text-4xl">
+
+            💳
+
+          </div>
+
+          <h3 class="text-2xl font-bold mt-8">
+
+            Secure Payments
+
+          </h3>
+
+          <p class="mt-4 leading-8 text-gray-500 group-hover:text-white">
+
+            Encrypted payment system with international security
+            standards.
+
+          </p>
+
+        </div>
+
+        <!-- Feature -->
+
+        <div
+          class="group bg-white border rounded-3xl p-8 hover:bg-sky-500 hover:text-white transition duration-300 shadow-lg">
+
+          <div class="w-20 h-20 rounded-2xl bg-sky-100 group-hover:bg-white flex items-center justify-center text-4xl">
+
+            🎧
+
+          </div>
+
+          <h3 class="text-2xl font-bold mt-8">
+
+            24/7 Support
+
+          </h3>
+
+          <p class="mt-4 leading-8 text-gray-500 group-hover:text-white">
+
+            Our support team is available anytime to assist your
+            journey.
+
+          </p>
+
+        </div>
+
+        <!-- Feature -->
+
+        <div
+          class="group bg-white border rounded-3xl p-8 hover:bg-sky-500 hover:text-white transition duration-300 shadow-lg">
+
+          <div class="w-20 h-20 rounded-2xl bg-sky-100 group-hover:bg-white flex items-center justify-center text-4xl">
+
+            💰
+
+          </div>
+
+          <h3 class="text-2xl font-bold mt-8">
+
+            Best Prices
+
+          </h3>
+
+          <p class="mt-4 leading-8 text-gray-500 group-hover:text-white">
+
+            Daily discounts and exclusive offers for every destination.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===================================================== -->
+  <!-- STATISTICS -->
+  <!-- ===================================================== -->
+
+  <section class="py-20 bg-slate-900">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+
+        <div>
+
+          <h2 class="text-5xl font-bold text-sky-400">
+
+            12M+
+
+          </h2>
+
+          <p class="text-gray-300 mt-4">
+
+            Happy Travelers
+
+          </p>
+
+        </div>
+
+        <div>
+
+          <h2 class="text-5xl font-bold text-sky-400">
+
+            500+
+
+          </h2>
+
+          <p class="text-gray-300 mt-4">
+
+            Airlines
+
+          </p>
+
+        </div>
+
+        <div>
+
+          <h2 class="text-5xl font-bold text-sky-400">
+
+            190+
+
+          </h2>
+
+          <p class="text-gray-300 mt-4">
+
+            Countries
+
+          </p>
+
+        </div>
+
+        <div>
+
+          <h2 class="text-5xl font-bold text-sky-400">
+
+            24/7
+
+          </h2>
+
+          <p class="text-gray-300 mt-4">
+
+            Customer Support
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ================= Footer ================= -->
+
+  <footer class="bg-slate-950 text-gray-300 mt-20">
+
+    <div class="max-w-7xl mx-auto px-6 py-16">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+
+        <!-- Logo -->
+
+        <div>
+
+          <h2 class="text-3xl font-bold text-white">
+
+            SkyJet
+
+          </h2>
+
+          <p class="mt-5 leading-8 text-gray-400">
+
+            SkyJet is a modern airline booking platform designed to
+            provide fast, secure and affordable flight reservations
+            around the world.
+
+          </p>
+
+        </div>
+
+        <!-- Company -->
+
+        <div>
+
+          <h3 class="text-xl font-semibold text-white mb-5">
+
+            Company
+
+          </h3>
+
+          <ul class="space-y-3">
+
+            <li><a href="#" class="hover:text-sky-400">About Us</a></li>
+
+            <li><a href="#" class="hover:text-sky-400">Careers</a></li>
+
+            <li><a href="#" class="hover:text-sky-400">Blog</a></li>
+
+            <li><a href="#" class="hover:text-sky-400">Contact</a></li>
+
+          </ul>
+
+        </div>
+
+        <!-- Support -->
+
+        <div>
+
+          <h3 class="text-xl font-semibold text-white mb-5">
+
+            Support
+
+          </h3>
+
+          <ul class="space-y-3">
+
+            <li><a href="#" class="hover:text-sky-400">Help Center</a></li>
+
+            <li><a href="#" class="hover:text-sky-400">Refund Policy</a></li>
+
+            <li><a href="#" class="hover:text-sky-400">Privacy Policy</a></li>
+
+            <li><a href="#" class="hover:text-sky-400">Terms & Conditions</a></li>
+
+          </ul>
+
+        </div>
+
+        <!-- Contact -->
+
+        <div>
+
+          <h3 class="text-xl font-semibold text-white mb-5">
+
+            Contact
+
+          </h3>
+
+          <ul class="space-y-3">
+
+            <li>📧 saba_sadeghi@skyjet.com</li>
+
+            <li>📞 +98 21 1234 5678</li>
+
+            <li>📍 Tehran, Iran</li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+      <hr class="border-slate-800 my-10">
+
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+        <p class="text-gray-500 text-center md:text-left">
+
+          © 2026 SkyJet. All Rights Reserved.
+
+        </p>
+
+        <p class="text-sm text-gray-400 text-center">
+
+          Designed & Developed with ❤️ by
+          <span class="font-semibold text-sky-400">
+            Saba Sadeghi
+          </span>
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+</body>
+
+</html>
